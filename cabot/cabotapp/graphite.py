@@ -22,7 +22,7 @@ def get_data(target_pattern, mins_to_check=None):
         params={
             'target': target_pattern,
             'format': 'json',
-            'from': _from,
+            'from': graphite_from,
         }
     )
     resp.raise_for_status()
